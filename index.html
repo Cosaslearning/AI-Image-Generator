@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine | Cosas Learning</title>
+    <!-- Importing the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+      <div class="heding"><h1>AI Image Generator</h1></div>      
+    </header>
+    <h3>👉 Convert Your Text Into An AI-Generated Images And Also Download Them 😊</h3>
+    <div class="prompt_box">
+      <form action="#" id="prompt_bar">
+        <input type="text" id="prompt_text" placeholder="Provide a prompt for your image" autocomplete="off" required>
+          <select class="img_quantity">
+            <!-- Options for selecting the number of images to generate -->
+            <!-- Default selection: 3 images -->
+            <option value="1">1 Image</option>
+            <option value="2">2 Images</option>
+            <option value="3" selected>3 Images</option>
+            <option value="4">4 Images</option>
+            <option value="5">5 Images</option>
+            <option value="6">6 Images</option>
+            <option value="7">7 Images</option>
+            <option value="8">8 Images</option>
+            <option value="9">9 Images</option>
+            <option value="10">10 Images</option>
+          </select>
+          <select class="img_size">
+            <!-- Options for selecting the image size -->
+            <!-- Default selection: 512x512 pixels -->
+            <option value="256x256">Size: 256x256</option>
+            <option value="512x512" selected>Size: 512x512</option>
+            <option value="1024x1024">Size: 1024x1024</option>
+          </select>
+        <button>Generate</button>
+      </form>
+    </div>
+    <div class="hero_section">
+       <div id="image_result">
+        <!-- Generated images will be displayed here -->
+        <div class="img_box">
+          <img src="images/image1.jpeg">
+        </div>
+        <div class="img_box">
+          <img src="images/image2.jpeg">
+        </div>
+        <div class="img_box">
+          <img src="images/image3.jpeg">
+        </div>
+        <div class="img_box">
+          <img src="images/image4.jpeg">
+        </div>
+        <div class="img_box">
+          <img src="images/image5.jpeg">
+        </div>
+        <div class="img_box">
+          <img src="images/image6.jpeg">
+        </div>
+       </div>
+    </div>
+  </div>
+  <!-- Importing the JavaScript file -->
+  <script src="script.js"></script>
+</body>   
+</html>

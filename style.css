@@ -1,0 +1,196 @@
+/* CSS styles optimized for the project */
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variable definitions */
+:root {
+    /* Colors */ 
+    --white_color: rgb(255, 255, 255);
+    --orange_color: rgb(246, 99, 53);
+    --black_color: rgb(0, 0, 0);
+    --background_color: linear-gradient(to top left, #b156d9, #213780);
+    --grey-color: rgb(228, 222, 222);
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: var(--background_color);
+    padding-bottom: 1rem;
+}
+
+/* Header styling */
+header {
+    padding: 2rem 0;
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    width: 20rem;
+    height: 6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heading styling */
+h1 {
+    color: var(--white_color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 0.2rem var(--orange_color) solid;
+    text-transform: uppercase;
+}
+
+/* Prompt box styling */
+.prompt_box {
+    margin: 1rem auto 2rem;
+    width: 50rem;
+    height: 3rem;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+/* Input field styling */
+form input {
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    flex: 1;
+    color: var(--black_color);
+    font-size: 1rem;
+    padding: 0 0.8rem; 
+}
+
+/* Placeholder text styling */
+form input::placeholder {
+    color: var(--black_color);
+}
+
+/* Select boxes styling */
+form .img_quantity, .img_size {
+    outline: none;
+    border: none;
+    height: 44px;
+    background: none;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Generate button styling */
+form button {
+    padding: 0 1rem;
+    height: 100%;
+    background: var(--orange_color);
+    color: var(--white_color);
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Hover effect for Generate button */
+form button:hover {
+    color: var(--orange_color);
+    background: var(--white_color);
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Additional styling */
+h3 {
+    color: var(--white_color);
+    padding: 2rem 0 2rem 4rem;
+}
+
+#image_result {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 3rem;
+    justify-content: center;
+}
+
+/* Image box styling */
+#image_result .img_box {
+    width: 25rem;
+    aspect-ratio: 1/1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+}
+
+#image_result .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#image_result .img_box.loading img {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Download button styling */
+#image_result .img_box .download-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--orange_color);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show download button on hover */
+#image_result .img_box:not(.loading):hover .download-btn {
+    display: flex;
+}
+
+/* Download button icon styling */
+#image_result .img_box .download-btn i {
+    width: 1rem;
+    height: 1rem;
+    color: var(--white_color);
+}
