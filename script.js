@@ -4,7 +4,7 @@ const imageresult = document.querySelector("#image_result");
 const downloadBtn =  document.querySelector(".download-btn");
 
 // Replace 'your-api-key' with your actual OpenAI API key
-const openaiAPIKey = "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";
+const openaiAPIKey = "your-api-key";
 let isImgGen = false;
 
 // Function to update image boxes with generated images
